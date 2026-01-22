@@ -1,71 +1,110 @@
-###################
-What is CodeIgniter
-###################
+===========================
+CodeIgniter Student CRUD
+===========================
 
-CodeIgniter is an Application Development Framework - a toolkit - for people
-who build web sites using PHP. Its goal is to enable you to develop projects
-much faster than you could if you were writing code from scratch, by providing
-a rich set of libraries for commonly needed tasks, as well as a simple
-interface and logical structure to access these libraries. CodeIgniter lets
-you creatively focus on your project by minimizing the amount of code needed
-for a given task.
+This repository contains a **Student CRUD (Create, Read, Update, Delete)**
+application built using the **CodeIgniter Framework**.
 
-*******************
-Release Information
-*******************
+The project demonstrates basic CRUD operations with a clean MVC structure,
+success messages, and simple UI for learning and interview practice purposes.
 
-This repo contains in-development code for future releases. To download the
-latest stable release please visit the `CodeIgniter Downloads
-<https://codeigniter.com/download>`_ page.
+--------------------------------
+Project Features
+--------------------------------
 
-**************************
-Changelog and New Features
-**************************
+The following functionalities have been implemented:
 
-You can find a list of all changes for each release in the `user
-guide change log <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/changelog.rst>`_.
+- Display Students List
+- Add New Student
+- Edit Student Details
+- Update Student Information
+- Delete Student Record
+- Success Message on Create, Update and Delete operations
 
-*******************
-Server Requirements
-*******************
+--------------------------------
+Project URL (Local)
+--------------------------------
 
-PHP version 5.6 or newer is recommended.
+Access the application in your browser:
 
-It should work on 5.3.7 as well, but we strongly advise you NOT to run
-such old versions of PHP, because of potential security and performance
-issues, as well as missing features.
+::
 
-************
-Installation
-************
+   http://localhost/project/demo_practice/codeigniter-student-management/index.php/
 
-Please see the `installation section <https://codeigniter.com/userguide3/installation/index.html>`_
-of the CodeIgniter User Guide.
+--------------------------------
+Technology Stack
+--------------------------------
 
-*******
-License
-*******
+- PHP
+- CodeIgniter 4
+- MySQL
+- HTML / CSS
+- Bootstrap (if applicable)
 
-Please see the `license
-agreement <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/license.rst>`_.
+--------------------------------
+Project Setup Instructions
+--------------------------------
 
-*********
-Resources
-*********
+Step 1: Clone Repository
+-----------------------
 
--  `User Guide <https://codeigniter.com/docs>`_
--  `Contributing Guide <https://github.com/bcit-ci/CodeIgniter/blob/develop/contributing.md>`_
--  `Language File Translations <https://github.com/bcit-ci/codeigniter3-translations>`_
--  `Community Forums <http://forum.codeigniter.com/>`_
--  `Community Wiki <https://github.com/bcit-ci/CodeIgniter/wiki>`_
--  `Community Slack Channel <https://codeigniterchat.slack.com>`_
+::
 
-Report security issues to our `Security Panel <mailto:security@codeigniter.com>`_
-or via our `page on HackerOne <https://hackerone.com/codeigniter>`_, thank you.
+   git clone <repository-url>
 
-***************
-Acknowledgement
-***************
+Step 2: Move Project to Local Server
+------------------------------------
 
-The CodeIgniter team would like to thank EllisLab, all the
-contributors to the CodeIgniter project and you, the CodeIgniter user.
+Place the project inside your local server directory
+(e.g. `htdocs` for XAMPP or `www` for WAMP).
+
+Step 3: Install Dependencies
+----------------------------
+
+If composer is used:
+
+::
+
+   composer update
+
+Step 4: Database Configuration
+------------------------------
+
+Open file:
+
+::
+
+   application/config/database.php
+
+Update database details:
+
+::
+
+   hostname => localhost
+   username => root
+   password =>
+   database => your_database_name
+
+Step 5: Import Database
+----------------------
+
+Import the provided SQL file into MySQL (if available).
+
+Step 6: Run the Project
+----------------------
+
+Open browser and visit:
+
+::
+
+   http://localhost/project/demo_practice/codeigniter-student-management/index.php/
+
+--------------------------------
+CRUD Flow Overview
+--------------------------------
+
+- Student list page displays all records
+- Add Student form creates a new student
+- Edit option updates existing student data
+- Delete option removes student record
+- Success messages confirm actions
